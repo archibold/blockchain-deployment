@@ -1,14 +1,17 @@
 {
-  "name": "ethers-simple-storage-fcc",
-  "version": "1.0.0",
-  "description": "",
-  "dependencies": {
-    "dotenv": "^14.2.0",
-    "ethers": "^6.2.3",
-    "prettier": "^2.5.1",
-    "solc": "0.8.7-fixed"
-  },
-  "scripts": {
-    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
-  }
+    "dependencies": {
+        "dotenv": "^14.2.0",
+        "ethers": "^6.2.3",
+        "prettier": "^2.5.1",
+        "solc": "0.8.7-fixed"
+    },
+    "name": "ether-deploy-package",
+    "version": "0.1.0",
+    "description": "This is deploying package for blockchain project written in solidity",
+    "main": "deploy.js",
+    "scripts": {
+        "compile": "npx solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+    },
+    "author": "Piotr Borysowski",
+    "license": "MIT"
 }
